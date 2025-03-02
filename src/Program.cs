@@ -28,13 +28,16 @@ internal class Program
                             RAISE;
                         END IF;
                 END;";
-
         db.Execute(createTableQuery);
 
-        //// データの挿入
-        //var insertQuery = "INSERT INTO SampleTable (Name, Age) VALUES (:Name, :Age)";
-        //db.Execute(insertQuery, new { Name = "John Doe", Age = 30 });
-        //db.Execute(insertQuery, new { Name = "Jane Doe", Age = 25 });
+        // データの削除
+        var deleteQuery = "DELETE FROM SampleTable";
+        db.Execute(deleteQuery);
+
+        // データの挿入
+        var insertQuery = "INSERT INTO SampleTable (Name, Age) VALUES (:Name, :Age)";
+        db.Execute(insertQuery, new { Name = "John Doe", Age = 30 });
+        db.Execute(insertQuery, new { Name = "Jane Doe", Age = 25 });
 
         // データの選択
         var selectQuery = "SELECT * FROM SampleTable";
@@ -50,6 +53,6 @@ internal class Program
 public class SampleTable
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public int Age { get; set; }
 }

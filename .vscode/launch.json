@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/ConnectionTest/bin/Debug/net6.0/docker_oracle.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/net6.0/DockerOracle.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ConnectionTest",
+            "cwd": "${workspaceFolder}/src",
             "console": "internalConsole",
             "stopAtEntry": false
         },

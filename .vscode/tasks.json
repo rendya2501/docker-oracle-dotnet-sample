@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ConnectionTest/docker_oracle.sln",
+                "${workspaceFolder}/src/DockerOracle.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/ConnectionTest/docker_oracle.sln",
+                "${workspaceFolder}/src/DockerOracle.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/ConnectionTest/docker_oracle.sln"
+                "${workspaceFolder}/src/DockerOracle.sln"
             ],
             "problemMatcher": "$msCompile"
         }
