@@ -133,20 +133,29 @@ dotnet run --project ./src/DockerOracle.csproj
 以下の出力を確認できればOK。  
 
 ``` logs
-Initial Data:
-ID: 4, Name: John Doe, Age: 30
-ID: 5, Name: Hoge Fuga, Age: 25
-ID: 6, Name: Piyo Piyo, Age: 20
-Update Data:
-ID: 4, Name: UPDATEEEEEEEEEEEEEEE, Age: 35
-ID: 5, Name: Hoge Fuga, Age: 25
-ID: 6, Name: Piyo Piyo, Age: 20
-Delete Data:
-ID: 4, Name: UPDATEEEEEEEEEEEEEEE, Age: 35
-ID: 5, Name: Hoge Fuga, Age: 25
-```
+Connecting to Oracle...
+Connection successful!
 
-何回もプログラムを実行するとIDが加算されていきます。  
+Create Table:
+Create Table successful!
+
+Insert Data:
+ID: 1, Name: John Doe, Age: 30
+ID: 2, Name: Hoge Fuga, Age: 25
+ID: 3, Name: Piyo Piyo, Age: 20
+
+Update Data:
+ID: 1, Name: UPDATEEEEEEEEEEEEEEE, Age: 35
+ID: 2, Name: Hoge Fuga, Age: 25
+ID: 3, Name: Piyo Piyo, Age: 20
+
+Delete Data:
+ID: 1, Name: UPDATEEEEEEEEEEEEEEE, Age: 35
+ID: 2, Name: Hoge Fuga, Age: 25
+
+Drop Table:
+Drop Table successful!
+```
 
 ## 後始末  
 
